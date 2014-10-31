@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>jQuery.VirtualCounter &mdash; Демо-страница</title>
+        <style type="text/css">
+            body {
+                padding: 20px 30px;
+            }
+            code {
+                display: inline-block;
+                padding: 0 30px 20px;
+                background: #ddd;
+            }
+            #selector {
+                color: darkgreen;
+            }
+        </style>
+        <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+        <script type="text/javascript" src="../jquery.virtual_counter.js"></script>
+        <script type="text/javascript">
+            (function($) {
+                $(function() {
+                    $('#selector').vc({
+                        min: 1,
+                        max: 1000
+                    });
+                })
+            })(jQuery)
+        </script>
+	</head>
+	<body>
+        <h1>jQuery Virtual Counter Демо</h1>
+            <pre>
+<code>
+(function($) {
+    $(function() {
+        $('#selector').vc({
+            min: 1,
+            max: 1000
+        });
+    })
+})(jQuery)
+</code>
+            </pre>
+            <h2>Значение счетчика: <span id="selector"></span></h2>
+	</body>
+</html>
